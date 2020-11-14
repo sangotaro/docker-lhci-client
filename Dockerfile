@@ -11,6 +11,6 @@ RUN apt-get update \
     && apt-get clean
 RUN sed -i 's/"$HERE\/chrome"/"$HERE\/chrome" --no-sandbox/g' /opt/google/chrome/google-chrome
 
-RUN npm install -g @lhci/cli@0.6.0
+RUN npm install -g @lhci/cli@0.6.1
 
 CMD [ "lhci", "--help" ]
